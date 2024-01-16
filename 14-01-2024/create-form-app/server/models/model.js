@@ -28,6 +28,8 @@ const UserForm = sequelize.define('forms', {
 
 
 
+
+
 User.hasMany(UserRole)
 UserRole.belongsTo(User)
 
@@ -41,5 +43,6 @@ module.exports = {
     User,
     UserRole,
     Role,
-    UserForm
+    UserForm,
+
 }
